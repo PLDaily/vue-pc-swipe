@@ -1,0 +1,42 @@
+/*!
+ * A lightweight vue swipe component work in pc
+ * v1.0.0 ©2017 PLDaily <pcd12321@gmail.com> 
+ * https://github.com/PLDaily/vue-pc-swipe#readme
+ */
+
+.pc-swipe {
+  position: relative;
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+}
+.pc-swipe-wrap {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+}
+.pc-swipe-wrap > div {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  left: 0;
+  top: 0;
+  display: none;
+  opacity: 0;
+}
+.pc-swipe-wrap > div.is-active {
+  animation-name: fadeIn;
+  animation-duration: 1.5s;
+  display: block;
+  opacity: 1;
+}
+@keyframes fadeIn {
+from {
+    opacity: 0;
+}
+to {
+    opacity: 1;
+}
+}
