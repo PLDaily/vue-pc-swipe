@@ -18,13 +18,13 @@
   overflow: hidden;
   left: 0;
   top: 0;
-  display: none;
   opacity: 0;
+  animation-name: fadeOut;
+  animation-duration: 0.5s;
 }
 .pc-swipe-wrap > div.is-active {
   animation-name: fadeIn;
-  animation-duration: 1.5s;
-  display: block;
+  animation-duration: 1s;
   opacity: 1;
 }
 @keyframes fadeIn {
@@ -33,6 +33,14 @@
   }
   to {
     opacity: 1;
+  }
+}
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
   }
 }
 </style>
