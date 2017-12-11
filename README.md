@@ -7,7 +7,7 @@
 [![npm](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://github.com/standard/standard)
 
 ## Overview
-> A lightweight vue swipe component with fading effect work in pc 
+> A lightweight vue swipe component that making the slides fade work in pc
 
 ## Install
 
@@ -62,6 +62,9 @@ npm run dev
 ```
 - open localhost:8080, you can see the example
 
+## expand
+
+you can use change function add indicators、prev or next button.
 
 ## options
 
@@ -82,7 +85,7 @@ npm run dev
 | getPos()   | returns current slide index position |
 | getNumSlides()   | returns the total amount of slides |
 | slide(index)   | slide to set index position |
-| callback(index)   | runs at slide change, index is the current slide index position |
+| change(index)   | runs at slide change, index is the current slide index position |
 
 
 ## LICENSE

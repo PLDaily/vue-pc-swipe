@@ -71,12 +71,12 @@ export default {
     }
   },
   mounted () {
+    if (this.$children.length < 2) this.continuous = false
+    this.slide(this.index)
     this.setUp()
   },
   methods: {
     setUp () {
-      if (this.$children.length < 2) this.continuous = false
-      this.slide(this.index)
       if (this.continuous) {
         this.timer = setInterval(() => {
           this.slide(this.index + 1)
@@ -95,12 +95,11 @@ export default {
     slide (index) {
       if (index >= this.getNumSlides()) {
         index = 0
-        this.index = index
       }
       if (index < 0) {
         index = this.getNumSlides() - 1
-        this.index = index
       }
+
       this.index = index
 
       if (this.oldChildEl) {
