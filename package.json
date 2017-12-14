@@ -6,6 +6,7 @@
   "scripts": {
     "watch": "webpack --watch",
     "build": "webpack",
+    "example:build": "webpack --config webpack.example.build.js",
     "dev": "webpack-dev-server --config webpack.example.js --open "
   },
   "repository": {
