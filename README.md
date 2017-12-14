@@ -7,7 +7,9 @@
 [![npm](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://github.com/standard/standard)
 
 ## Overview
-> A lightweight vue swipe component that making the slides fade work in pc
+> A lightweight vue swipe component that making the slides fade work in pc.
+
+[demo](http://67.218.146.247:8081/)
 
 ## Install
 
@@ -70,22 +72,22 @@ you can use change function add indicators、prev or next button.
 
 ### Attributes
 
-| Option | Description                              |
-| ------ | ---------------------------------------- |
-| continuous    | Boolean(default: true) create an infinite feel with no endpoints |
-| auto   | Number(default: 5000) speed of prev and next transitions in milliseconds |
-| startSlide   | Number(defalut: 0) index position Swipe should start at |
+| Option     | Description                              |
+| ---------- | ---------------------------------------- |
+| continuous | Boolean(default: true) create an infinite feel with no endpoints |
+| auto       | Number(default: 5000) speed of prev and next transitions in milliseconds |
+| startSlide | Number(defalut: 0) index position Swipe should start at |
 
 ### Events
 
-| Option | Description                              |
-| ------ | ---------------------------------------- |
-| prev()    | slide to prev |
-| next()   | slide to next |
-| getPos()   | returns current slide index position |
-| getNumSlides()   | returns the total amount of slides |
-| slide(index)   | slide to set index position |
-| change(index)   | runs at slide change, index is the current slide index position |
+| Option         | Description                              |
+| -------------- | ---------------------------------------- |
+| prev()         | slide to prev                            |
+| next()         | slide to next                            |
+| getPos()       | returns current slide index position     |
+| getNumSlides() | returns the total amount of slides       |
+| slide(index)   | slide to set index position              |
+| change(index)  | runs at slide change, index is the current slide index position |
 
 
 ## LICENSE
