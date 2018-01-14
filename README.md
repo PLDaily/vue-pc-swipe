@@ -48,25 +48,9 @@ var SwipeItem = require("vue-pc-swipe").SwipeItem;
 </swipe>
 ```
 
-## example
-
-- clone the project
-```
-git clone https://github.com/PLDaily/vue-pc-swipe
-```
-- install npm package
-```
-npm install
-```
-- serve with hot reload at localhost:8080
-```
-npm run dev
-```
-- open localhost:8080, you can see the example
-
 ## expand
 
-you can use change function add indicators、prev or next button.
+you can use change function add indicators、prev or next button.[demo](http://67.218.146.247:8081/)
 
 ## options
 

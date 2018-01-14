@@ -47,8 +47,8 @@ const config = {
         include: [resolve('src')],
         options: {
           loaders: {
-            css: ExtractTextPlugin.extract({
-              use: 'css-loader',
+            scss: ExtractTextPlugin.extract({
+              use: ['css-loader', 'sass-loader'],
               fallback: 'vue-style-loader'
             })
           }

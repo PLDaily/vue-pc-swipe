@@ -1,31 +1,11 @@
-<style type="text/css">
-.pc-swipe {
-  position: relative;
-  overflow: hidden;
-  height: 100%;
-  width: 100%;
-}
-.pc-swipe-wrap {
-  position: relative;
-  overflow: hidden;
-  width: 100%;
-  height: 100%;
-}
-.pc-swipe-wrap > div {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-  left: 0;
-  top: 0;
-  opacity: 0;
-  animation-name: fadeOut;
-  animation-duration: 0.5s;
-}
-.pc-swipe-wrap > div.is-active {
-  animation-name: fadeIn;
-  animation-duration: 1s;
-  opacity: 1;
+<style lang="scss">
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 @keyframes fadeIn {
   from {
@@ -35,12 +15,50 @@
     opacity: 1;
   }
 }
+
+@-webkit-keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
 @keyframes fadeOut {
   from {
     opacity: 1;
   }
   to {
     opacity: 0;
+  }
+}
+
+.pc-swipe {
+  position: relative;
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+  &-wrap {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    > div {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      left: 0;
+      top: 0;
+      opacity: 0;
+      -webkit-animation: .3s fadeOut;
+              animation: .3s fadeOut;
+    }
+    .is-active {
+      opacity: 1;
+      -webkit-animation: .3s fadeIn;
+              animation: .3s fadeIn;
+    }
   }
 }
 </style>
